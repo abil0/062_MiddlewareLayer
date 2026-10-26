@@ -60,4 +60,6 @@ const mahasiswaSchema = joi.object({
     kelas: joi.string().trim().min(1).max(20).required(),
 });
 
-
+const idschema = joi.object({
+    id: joi.number().integer().positive().required()
+})
