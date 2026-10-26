@@ -26,10 +26,28 @@ app.use(express.urlencoded({ extended: true }))
         method :req.method
         url :req.originalUrl
         status : res.statusCode
-        duration : ${duration}ms`
+        duration : '${duration}ms`
         
         })
         }
 
         next()
         })
+
+function successResponse(res, data, statusCode = 200) {
+    res.status(statusCode).json({
+        sucsess: true,
+        message,
+        data,
+        eror: null
+    });
+}
+
+function errorResponse(res,message,status, details= null) {
+    return res.status(status).json({
+        success: false,
+        message,
+        data: null,
+        error: details
+    });
+}
