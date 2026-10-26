@@ -8,4 +8,5 @@ PUT
 <img width="944" height="599" alt="image" src="https://github.com/user-attachments/assets/75cacae5-3658-45b7-9d5c-0683a98da74c" />
 
 DELETE
-![Uploading image.png…]()
+<img width="959" height="598" alt="image" src="https://github.com/user-attachments/assets/2e766331-13d7-46c3-8f2c-2ac90b53e167" />
+
